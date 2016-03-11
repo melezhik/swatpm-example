@@ -2,6 +2,11 @@
     
 use Dancer2;
 
+get '/hello' => sub {
+    return 'Hi there!'
+};
+
+
 get '/foo/bar' => sub {
     return "I am get to /foo/bar. you have just told: ".query_parameters->get('greeting')
 };
