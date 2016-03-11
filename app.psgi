@@ -8,11 +8,11 @@ get '/hello' => sub {
 
 
 get '/foo/bar' => sub {
-    return "I am get to /foo/bar. you have just told: ".query_parameters->get('greeting')
+    return "I am get to /foo/bar. you just told me: ".query_parameters->get('greeting')
 };
 
 post '/bar/baz' => sub {
-    return "I am post to /bar/baz. you have just told: ".params->{'greeting'}
+    return "I am post to /bar/baz. you just told me: goodbye"
 };
 
 post '/send_cookie' => sub {

@@ -1,2 +1,2 @@
 200 OK
-I am post to /bar/baz. you have just told: hello2
+I am post to /bar/baz. you just told me: goodbye
